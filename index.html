@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login - Web Component Example</title>
+        <link rel="stylesheet" href="./assets/styles/app.css" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- <div style="display: block">
+                <button type="button" id="go-login">Login Page</button>
+                <button type="button" id="go-register">Register Page</button>
+            </div> -->
+            <div class="wrapper">
+                <main-application name="login-component" />
+            </div>
+        </div>
+
+        <!-- template component -->
+        <template id="login">
+            <div class="card">
+                <div class="card-header">Login Page</div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email"> Email </label>
+                            <input
+                                type="email"
+                                id="email"
+                                value=""
+                                class="form-control"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="password"> Password </label>
+                            <inputls -al ~/.ssh type="password" id="password"
+                            value="" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <button type="button" class="button">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <p class="text-action">
+                Belum punya akun?
+                <a href="/#/register"> Register</a>
+            </p>
+        </template>
+
+        <template id="register">
+            <div class="card">
+                <div class="card-header">Register Page</div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email"> Email </label>
+                            <input
+                                type="email"
+                                id="email"
+                                class="form-control"
+                                value=""
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password"> Password </label>
+                            <input
+                                type="password"
+                                id="password"
+                                class="form-control"
+                                value=""
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="passwordconfirm">
+                                Verify Password
+                            </label>
+                            <input
+                                type="password"
+                                id="passwordconfirm"
+                                class="form-control"
+                                value=""
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <button type="button" class="button">
+                                Register
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <p class="text-action">
+                Sudah punya akun?
+                <a href="/#/login"> Login </a>
+            </p>
+        </template>
+
+        <script src="./assets/app.js" type="module"></script>
+    </body>
+</html>

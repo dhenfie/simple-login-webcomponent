@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+input,
+button,
+label {
+    display: block;
+}
+input,
+button {
+    width: 100%;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #efefef;
+    color: #555555;
+}
+
+a,
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+    outline: none;
+    color: #8a2be2;
+}
+
+.text-action {
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px #afafafaf;
+}
+
+.card .card-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6em;
+    padding: 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.card .card-body {
+    padding: 15px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    background-color: #ffffff;
+    padding: 10px;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+.form-control:hover,
+.form-control:focus {
+    transition: border 0.5s ease;
+    border: 1px solid #8a2be2;
+}
+
+.form-control:invalid,
+.form-control:hover:invalid,
+.form-control:focus:invalid {
+    border-color: salmon;
+}
+
+.button {
+    background-color: #333333;
+    padding: 8px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    color: #eeeeee;
+}
+
+.form-group label {
+    color: #888888;
+    margin-bottom: 7px;
+    margin-left: 10px;
+}
+
+.form-group .button {
+    margin-top: 20px;
+}
+
+@media (min-width: 560px) {
+    .wrapper {
+        width: 480px;
+    }
+}
